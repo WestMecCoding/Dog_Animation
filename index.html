@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Park Animation</title>
+    <style>
+        div#splash-image {
+            background-image: url('./dog-park.webp');
+            width: 1200px;
+            height: 800px;
+            background-size: cover;
+            margin: auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        h1#park-name {
+            position: relative;
+            color: red;
+            font-size: 5rem;
+            font-style: italic;
+            font-weight: bold;
+            /* z-index: 1000; */
+            margin-left: 10%;
+            text-shadow:
+                -2px -2px 0 #000,
+                /* top left */
+                2px -2px 0 #000,
+                /* top right */
+                -2px 2px 0 #000,
+                /* bottom left */
+                2px 2px 0 #000,
+                /* bottom right */
+                0 -2px 0 #000,
+                /* top */
+                0 2px 0 #000,
+                /* bottom */
+                -2px 0 0 #000,
+                /* left */
+                2px 0 0 #000;
+
+
+        }
+
+
+
+        img#red-frisbee {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: scale(.8);
+
+        }
+
+
+
+        img#golden-dog {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            /* opacity: 0; */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="splash-image">
+        <h1 id="park-name">Good Dog Frisbee Park</h1>
+        <img id="red-frisbee" src="./red-frisbee.png" alt="Red Frisbee" width="240" height="190" />
+        <img id="golden-dog" src="./dog-transparent.png" width="600" height="640" alt="Golden Dog" />
+    </div>
+</body>
+
+</html>
